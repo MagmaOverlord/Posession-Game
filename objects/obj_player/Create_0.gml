@@ -10,8 +10,9 @@ moveUp = 0;
 moveDown = 0;
 
 //possession
-#macro possessionCooldownLength 2 //seconds
-#macro possessionRange 50
-possessionCooldown = 0;
+#macro possessionCooldownLength 2.0 //seconds
+#macro possessionRange 500
+possessionCooldown = 0.0;
+currentPossession = id;
 
 isPossessing = false;
