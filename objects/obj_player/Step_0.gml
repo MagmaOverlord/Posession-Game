@@ -1,3 +1,32 @@
+//check for Possession behavior
+if (keyboard_check_pressed(vk_space)) {
+	if (possessionCooldown == 0) {
+		possessionCooldown == possessionCooldownLength;
+		if (isPossessing) {
+			//if no fellas within range
+			//isPossessing = false;
+			//revert back to spirit state
+			
+			//if fellas within range
+			
+		} else {
+			//possess a fella within range
+			isPossessing = true;
+			//need to figure out a better way to check collisions but this'll be good enough to implement for now
+			var inst = collision_circle(x, y, possessionRange, obj_enemy1, false, true);
+			if (inst != noone) {
+				
+			}
+		}
+	} else {
+		//show a message like "it's on cooldown" or play a sound effect or something
+	}
+}
+
+
+
+
+
 // Check keys for movement
 moveRight = keyboard_check(vk_right);
 moveUp = keyboard_check(vk_up);

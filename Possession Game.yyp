@@ -34,14 +34,16 @@
   },
   "name":"Possession Game",
   "resources":[
-    {"id":{"name":"rm_gameMain","path":"objects/rm_gameMain/rm_gameMain.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"rm_gameMain","path":"rooms/rm_gameMain/rm_gameMain.yy",},},
+    {"id":{"name":"spr_enemy1_idle_down","path":"sprites/spr_enemy1_idle_down/spr_enemy1_idle_down.yy",},},
     {"id":{"name":"spr_player_idle_down","path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_gameMain","path":"rooms/rm_gameMain/rm_gameMain.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
