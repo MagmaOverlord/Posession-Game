@@ -34,7 +34,9 @@
   },
   "name":"Possession Game",
   "resources":[
+    {"id":{"name":"rm_gameMain","path":"objects/rm_gameMain/rm_gameMain.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_player_idle_down","path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
