@@ -11,8 +11,12 @@ moveDown = 0;
 
 //possession
 #macro possessionCooldownLength 2.0 //seconds
-#macro possessionRange 500
+#macro possessionRange 250
 possessionCooldown = 0.0;
-currentPossession = id;
+currentPossession = noone;
 
+
+//status
 isPossessing = false;
+health = 1;
+

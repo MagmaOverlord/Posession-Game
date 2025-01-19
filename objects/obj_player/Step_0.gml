@@ -26,6 +26,17 @@ function findClosestInstance(obj) {
 	return _inst;
 }
 
+function possessEnemy(inst) {
+	show_debug_message("found a fella");
+	x = inst.x;
+	y = inst.y;
+	instance_deactivate_object(inst);
+	//grab the sprites of the fella
+	//grab the abilities of the fella
+	currentPossession = inst;
+	isPossessing = true;
+}
+
 //check for Possession behavior
 if (keyboard_check_pressed(vk_space)) {
 	if (possessionCooldown <= 0.0) {
@@ -34,20 +45,24 @@ if (keyboard_check_pressed(vk_space)) {
 		var inst = findClosestInstance(obj_enemy1);
 		if (isPossessing) {
 			show_debug_message("is possessing running");
+			instance_activate_object(currentPossession);
+			
 			with (currentPossession) {
 				show_debug_message("showing friend");
 				isPossessed = false;
-				visible = true;
+				x = other.x;
+				y = other.y;
 			}
 			
+			//if no fellas within range
 			if (inst == noone || inst == currentPossession) {
 				isPossessing = false;
+				currentPossession = noone;
 			}
-			//if no fellas within range
-			//isPossessing = false;
-			//revert back to spirit state
+			else {
+				possessEnemy(inst);
+			}
 			
-			//if fellas within range
 			
 		} else {
 			show_debug_message("possessing");
@@ -55,14 +70,7 @@ if (keyboard_check_pressed(vk_space)) {
 			//isPossessing = true;
 			//need to figure out a better way to check collisions but this'll be good enough to test
 			if (inst != noone) {
-				show_debug_message("found a fella");
-				x = inst.x;
-				y = inst.y;
-				inst.isPossessed = true;
-				//grab the sprites of the fella
-				//grab the abilities of the fella
-				currentPossession = inst;
-				isPossessing = true;
+				possessEnemy(inst);
 			}
 		}
 	} else {
@@ -73,7 +81,12 @@ if (keyboard_check_pressed(vk_space)) {
 
 if (possessionCooldown > 0.0) {
 	possessionCooldown -= delta_time / 1000000;
-	show_debug_message(possessionCooldown);
+}
+
+if (keyboard_check_pressed(mb_left)) {
+	if (currentPossession != noone) {
+		currentPossession.attack(x, y, dir, obj_enemy1, currentPossession.damage);
+	}
 }
 
 
