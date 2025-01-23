@@ -1,0 +1,9 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Enemy One Group","order":1,"path":"folders/Sprites/Enemy One Group.yy",},
+    {"name":"Player Group","order":2,"path":"folders/Sprites/Player Group.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
+  ],
+}

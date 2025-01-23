@@ -91,10 +91,10 @@ if (keyboard_check_pressed(mb_left)) {
 
 
 // Check keys for movement
-moveRight = keyboard_check(vk_right);
-moveUp = keyboard_check(vk_up);
-moveLeft = keyboard_check(vk_left);
-moveDown = keyboard_check(vk_down);
+moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
+moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
+moveLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
+moveDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
 
 // Calculate movement
 vx = ((moveRight - moveLeft) * walkSpeed);
