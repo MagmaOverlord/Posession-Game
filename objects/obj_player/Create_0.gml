@@ -20,3 +20,4 @@ currentPossession = noone;
 isPossessing = false;
 health = 1;
 
+

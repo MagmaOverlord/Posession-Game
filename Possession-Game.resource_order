@@ -1,9 +1,19 @@
 {
   "FolderOrderSettings":[
-    {"name":"Enemy One Group","order":1,"path":"folders/Sprites/Enemy One Group.yy",},
-    {"name":"Player Group","order":2,"path":"folders/Sprites/Player Group.yy",},
+    {"name":"Enemy One Sprites","order":1,"path":"folders/Sprites/Enemy One Sprites.yy",},
+    {"name":"Healthbar Sprites","order":4,"path":"folders/Sprites/Healthbar Sprites.yy",},
+    {"name":"Player Sprites","order":2,"path":"folders/Sprites/Player Sprites.yy",},
+    {"name":"player Idle","order":3,"path":"folders/Sprites/Player Sprites/player Idle.yy",},
+    {"name":"player walk","order":4,"path":"folders/Sprites/Player Sprites/player walk.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_camera","order":1,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"spr_hp_bar","order":1,"path":"sprites/spr_hp_bar/spr_hp_bar.yy",},
+    {"name":"spr_player_idle_down","order":2,"path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},
+    {"name":"spr_player_idle_left","order":1,"path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},
+    {"name":"spr_player_idle_right","order":3,"path":"sprites/spr_player_idle_right/spr_player_idle_right.yy",},
+    {"name":"spr_player_walk_down","order":1,"path":"sprites/spr_player_walk_down/spr_player_walk_down.yy",},
+    {"name":"spr_player_walk_right","order":2,"path":"sprites/spr_player_walk_right/spr_player_walk_right.yy",},
+    {"name":"spr_player_walk_up","order":3,"path":"sprites/spr_player_walk_up/spr_player_walk_up.yy",},
   ],
 }

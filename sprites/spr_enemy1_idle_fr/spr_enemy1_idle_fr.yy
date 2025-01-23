@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Enemy One Group",
-    "path":"folders/Sprites/Enemy One Group.yy",
+    "name":"Enemy One Sprites",
+    "path":"folders/Sprites/Enemy One Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
